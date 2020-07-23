@@ -4,7 +4,7 @@
 
 ## Structure
 
-From chapter two to five  pyspark has been employed. Scala Spark has been used in the rest of the chapters.
+The notebooks run pyspark or in scala-spark. At the begiining of the notebook each case is specified.
 
 ## Scala Spark
 
