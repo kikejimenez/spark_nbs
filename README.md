@@ -4,7 +4,7 @@
 
 ## Structure
 
-The notebooks run pyspark or in scala-spark. At the begiining of the notebook each case is specified.
+The notebook run in pyspark or scala-spark. At the begiining of the notebook each case is specified.
 
 ## Scala Spark
 
