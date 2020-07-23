@@ -1,6 +1,6 @@
-# Spark Notebooks
+#  Spark Notebooks
 
-> Notebooks with code examples from  the [*Learning Spark* (_Second Edition_)](https://learning.oreilly.com/library/view/learning-spark-2nd) book.
+> Notebooks with the code examples from  the *Learning Spark* (_Second Edition_) book.
 
 ## Structure
 
@@ -13,6 +13,7 @@ To run Scala in a notebook, the are two tools available:
 - [Spylon-Kernel](https://github.com/Valassis-Digital-Media/spylon-kernel)
 - [Almond](https://github.com/almond-sh/almond)
 
+
 ## Docker Containers
 
 To properly run Spark in a notebook you may use:
@@ -21,9 +22,10 @@ To properly run Spark in a notebook you may use:
 
 - [Almond](https://hub.docker.com/r/almondsh/almond)
 
+
 ## Datasets
 
-The datasets are taken from  _databricks-datasets_ directory in the [*Learning Spark* repo](https://learning.oreilly.com/library/view/learning-spark-2nd), this directory must be placed in the root folder of this repo.
+All the datasets are stored in _databricks-datasets_
 
 ## References
 
