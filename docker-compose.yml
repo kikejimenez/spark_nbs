@@ -1,0 +1,28 @@
+#https://towardsdatascience.com/containerize-your-whole-data-science-environment-or-anything-you-want-with-docker-compose-e962b8ce8ce5
+version: '3'
+services:
+  notebook:
+    build:
+        context: ./dockers/spark-docker
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    user: root
+    environment: 
+        NB_USER: 'enrique'
+        JUPYTER_ENABLE_LAB: 'yes'
+        GRANT_SUDO: 'yes'
+    volumes: 
+        - .:/wd
+    working_dir: /wd
+    depends_on: 
+      - mlflow
+    environment: 
+      MLFLOW_TRACKING_URI: 'http://mlflow:5000'
+  mlflow:
+    build:
+      context: ./dockers/ml-flow-docker
+    expose: 
+      - "5000"
+    ports:
+      - "5000:5000"
